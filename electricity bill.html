@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electricity bill </title>
+</head>
+<body>
+<form method="post">
+Enter Meter Number:<input type="text" name="number" id="number" />
+<input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+<p id="demo"> </p>
+<div id="options" style="display:none;">
+<input type='radio'name='radio' onclick='myfunction(this.value)' value='1'/> Domestical Use
+
+</div>
+<div id="display1" style="display:none;">
+<label>Enter Number of Units Consumed</label>
+<input type="text" name="amount1" id="amount1" value=""/>
+<input type="submit" name="submit1" value="submit" onclick="getamount1()"/>
+</div>
+
+</form>
+</body>
+<script type="text/javascript">
+function getaction()
+{
+var m=document.getElementById ('number').value;
+var a=986;
+var a=987;
+var a=984;
+{
+document.getElementById ("demo").innerHTML =" Category";
+document.getElementById ('options').style.display = 'block';
+}
+}
+function myfunction(val)
+{
+if(val==1)
+{
+document.getElementById ('display1').style.display ='block';
+
+}
+}
+function getamount1()
+{
+var u = document.getElementById ('amount1').value;
+var s = 20;
+var bill = 0.0;
+if(u>0 && u<100)
+{
+bill = (u*0.35)+s;
+document.getElementById ('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+if(u>=100 && u<300)
+{
+bill = (u*0.65)+s;
+document.getElementById('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+if(u>=300 && u<500)
+{
+bill = (u*0.90)+s;
+document.getElementById('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+if(u>=500 && u<700)
+{
+bill = (u*1)+s;
+document.getElementById('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+if(u>=700 && u<900)
+{
+bill = (u*2)+s;
+document.getElementById('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+if(u>=900 && u<1000)
+{
+bill = (u*3)+s;
+document.getElementById('display1').innerHTML = "Bill amount: "+bill;
+}
+else
+{
+document.getElementById('display1').innerHTML = "Invalid units";
+}
+}
+</script>
+</html>
