@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-image: url('image/book.jpg');
+                background-size: 100%;
+                background-clip: padding-box;
+            }
+            table,tr,th,td{
+                border: 4px;
+                border-style: solid;
+                border-collapse: collapse;
+                
+            }
+            .tb{
+                width: 50%;
+                background-color: rgb(231, 161, 10);
+            }
+            td{
+                text-align: center;
+                padding: 10px;
+            }
+            tr,th{
+                padding: 20px;
+            }
+            .tr,th:hover{
+                background-color: rgb(20, 219, 179);
+            }
+            .cap{
+                font-style: oblique;
+                font-weight: bolder;
+                font-size: 40px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+         <table class="tb" align="center">
+             <caption class="cap" style="color: rgb(224, 64, 144);">Total Bill Amount OF Stationary Items</caption>
+             <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Item Purchased</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>01</td>
+                <td>Eraser</td>
+                <td>5</td>
+                <td>3.00</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>pencil</td>
+                <td>10</td>
+                <td>5.00</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Pen</td>
+                <td>10</td>
+                <td>10.00</td>
+                <td>$100.00</td>
+            </tr>
+            
+            <tr>
+                <td>04</td>
+                <td>Notebook</td>
+                <td>8</td>
+                <td>20.00</td>
+                <td>$160.00</td>
+            </tr>
+            
+            <tr>
+                <td>05</td>
+                <td>Stapler</td>
+                <td>1</td>
+                <td>20.00</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>Fountain pen</td>
+                <td>1</td>
+                <td>20.00</td>
+                <td>$20.00</td>
+            </tr>
+            <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>$365.00</td>
+            </tr>
+            </tfoot>
+
+        </table>
+    </tbody>
+</html>
