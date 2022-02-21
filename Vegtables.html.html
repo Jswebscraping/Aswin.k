@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-image: url('image/book.jpg');
+                background-size: 100%;
+                background-clip: padding-box;
+            }
+            table,tr,th,td{
+                border: 3px;
+                border-style: solid;
+                border-collapse: collapse;
+                
+            }
+            .tb{
+                width: 50%;
+                background-color: rgb(15, 211, 236);
+            }
+            td{
+                text-align: center;
+                padding: 10px;
+            }
+            tr,th{
+                padding: 20px;
+            }
+            .tr,th:hover{
+                background-color: rgb(140, 15, 223);
+            }
+            .cap{
+                font-style: oblique;
+                font-weight: bolder;
+                font-size: 40px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+         <table class="tb" align="center">
+             <caption class="cap" style="color: rgb(3, 212, 31);">Total Bill Amount OF Vegtables</caption>
+             <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Item Purchased</th>
+                <th>Kg</th>
+                <th>Price</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>01</td>
+                <td>Tomato</td>
+                <td>4Kg</td>
+                <td>10.00</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Potato</td>
+                <td>5Kg</td>
+                <td>15.00</td>
+                <td>$75.00</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Cabbage</td>
+                <td>1Kg</td>
+                <td>20.00</td>
+                <td>$20.00</td>
+            </tr>
+            
+            <tr>
+                <td>04</td>
+                <td>Onion</td>
+                <td>3KG</td>
+                <td>15.00</td>
+                <td>$45.00</td>
+            </tr>
+
+            <tfoot><td>05</td>
+                <td>Carrot</td>
+                <td>2Kg</td>
+                <td>15.00</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>$210.00</td>
+            </tr>
+            </tfoot>
+
+        </table>
+    </tbody>
+</html>
